@@ -85,4 +85,33 @@ This is a service pod in which is useful in exposing pods to internet, because b
 
 ![Screenshot (37)](https://user-images.githubusercontent.com/114085306/226709134-8265da13-a0a5-49e1-a85f-6ee4737de10e.png)
 
-After creating services
+After creating services service like that , by using kubectl create command we can create svc and use kubectl get svc command to see it.
+And if you copy that address and hit it on internet you can see the out put like below.
+![Screenshot (36)](https://user-images.githubusercontent.com/114085306/226711430-93ac93a9-0cf0-4c4d-8f32-1ff18f58ddaa.png)
+
+Here we can see the sample web application deployed on internet successfully.
+
+There are several services used in project like
+container,
+
+memory,
+
+replica set,
+
+cpu,
+
+ImageContainer portno etc..
+
+Here all these are used because these all are part of application, these specify the applications status and etc.Without these, application can't be deployed on to the internet.
+
+## The other procedures used in project are as fallows.
+
+Troble shooting Pods if pod fails.
+these methods involves commands like       #kubectl logs <pod-name>
+  
+kubetcl describe pod<pod name>
+  
+
+
+
+
