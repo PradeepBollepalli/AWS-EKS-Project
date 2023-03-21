@@ -73,5 +73,16 @@ Then we can use kubectl get nodes
 #Kubectl get nodes- This command shows the nodes whixh are ready and up.
 ![Screenshot (34)](https://user-images.githubusercontent.com/114085306/226708064-4183f119-095a-48e8-8115-0a6186518059.png)
 
-
+After that we go and create services , we can create services in Visual studio code. 
+In that we use YAML documents to write Kubernetes manifest files.They are like below.
+![Screenshot (38)](https://user-images.githubusercontent.com/114085306/226709739-36ab98b6-18b4-4b7b-830d-f7795472ab38.png)
  
+This is a service pod in which is useful in exposing pods to internet, because by default pods are private to the network if we want to expose them to internet, we first create a service and configure name and TYPE=Loadbalancer.Then it should be given in Deployment-nginx also.If you dont put load balancer or different proxys we can deploy them.
+
+
+![Screenshot (39)](https://user-images.githubusercontent.com/114085306/226710645-88b336a3-e823-4de4-bc6c-e23d1e9655fc.png)
+
+
+![Screenshot (37)](https://user-images.githubusercontent.com/114085306/226709134-8265da13-a0a5-49e1-a85f-6ee4737de10e.png)
+
+After creating services
