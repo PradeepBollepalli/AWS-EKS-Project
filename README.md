@@ -1,4 +1,4 @@
-                                                              # AWS-EKS-Project
+                                           # AWS-EKS-Project
 
                    
 
@@ -10,7 +10,7 @@ In this service we can launch an a server and assaign Networks, Subnets , and cr
  In this service we use tools like AWs cloud watch,Loadbalancers and so on .
 
 2.WHY AWS EKS CLUSTER?
-     Because now a days all the projects using this service because it provides services in such a      way that we can deploy,scale,rollout,and        can monitor our project/application very easily. How       ever there are other compitetors are there in the market for EKS service, these          services are  different from person/ person or ganizations.
+     Because now a days all the projects using this service because it provides services in such a  way that we can deploy,scale,rollout,and            can monitor our project/application very easily. How  ever there are other compitetors are there in the market for EKS service, these              are  different from person/ person or ganizations.
 
 3.I prefer AWs Eks cluster because as a user i feel like it provides me with good user interface and godd services. Other EKS providers in              market are i) Google Kubernetes Engine (GKE)
                   ii) Microsoft Azure Kubernetes Service (AKS)
@@ -22,6 +22,8 @@ In this service we can launch an a server and assaign Networks, Subnets , and cr
 4.AWS EKS PROCESS:     
   1.Go to AWS Console--Select AWS EKS Service.--Click on Add Cluster--     create-- and Give name--select version--Cluster service role--(generally    cluster generally have  two roles 1.Master to manage 
                                   2.nodes. also called as workers).
+                                  
+![Screenshot (11)](https://user-images.githubusercontent.com/114085306/226707192-69ab60bd-b9ae-4a56-b1cc-1b3d49ad6546.png)
 
  Cluster require access to services like ECS, ECR,and others. so For that we create cluster service role.
 
@@ -34,8 +36,12 @@ give the fallowing permission for roles like 1.Amazon EKSWorker node policy.
                                              2.AmazonEC2ContainerRegistryReadOnly.
                                              3.Amazon EKS_CNI_policy
 
+![Screenshot (27)](https://user-images.githubusercontent.com/114085306/226707347-176285b8-f19f-4cee-9e14-98bfc0571560.png)
+
  provide name and hit create a node and select node group policy under it.
  In nod egroup configurataion it asks about AMI type,Capacity type, Instance types, Disk sizes etc give all of them.
+
+![Screenshot (29)](https://user-images.githubusercontent.com/114085306/226707566-62645e44-9714-49f7-9bec-55c6b61bff70.png)
 
 6.In node group scaling configuration you can select Desired size,Minimum size,Maximum size of nodes.
  In network configuration select same subnets you configured to VPC.
@@ -54,10 +60,18 @@ ACCESSING EKS CLUSTER.
          a.generate keys for the user throug which you have created  EKS cluster.
          b. click on manage access keys.
 
+![Screenshot (32)](https://user-images.githubusercontent.com/114085306/226707851-0a88cb99-8b49-44b1-acbe-e00dd1fed925.png)
+
         aws configure = It asks for Access key id
         can use this as well  aws sts get-caller-identity.  This shows which local user configured to it.
         aws eks update-kubeconfig --region region-code --name my-cluster.
+        
+        ![Screenshot (33)](https://user-images.githubusercontent.com/114085306/226707955-e8f8bf0a-5ba7-43a6-9041-fe5f8af27056.png)
+
 It adds new file (for what we done)and can see it by doing cat command.
 Then we can use kubectl get nodes
 #Kubectl get nodes- This command shows the nodes whixh are ready and up.
+![Screenshot (34)](https://user-images.githubusercontent.com/114085306/226708064-4183f119-095a-48e8-8115-0a6186518059.png)
+
+
  
