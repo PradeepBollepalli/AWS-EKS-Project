@@ -50,14 +50,14 @@ ACCESSING EKS CLUSTER.
   1.  Kubectl installation is required.
   2.AWS CLI is required to configure access and we need to configure keys and permission to it.
       configure authentication.
-  3. Go to Iam Dash board
-         a.geerate keys for the user throug which you have created  EKS cluster.
-         b. click on manage access keys
+  3. Go to IAM Dash board
+         a.generate keys for the user throug which you have created  EKS cluster.
+         b. click on manage access keys.
 
         aws configure = It asks for Access key id
         can use this as well  aws sts get-caller-identity.  This shows which local user configured to it.
         aws eks update-kubeconfig --region region-code --name my-cluster.
-It adds new file (for what we done)andcan see it by doing cat command.
+It adds new file (for what we done)and can see it by doing cat command.
 Then we can use kubectl get nodes
-Kubectl get nodes-This command shows the nodes whixh are ready and up.
+#Kubectl get nodes- This command shows the nodes whixh are ready and up.
  
