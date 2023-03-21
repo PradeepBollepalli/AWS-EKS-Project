@@ -107,9 +107,23 @@ Here all these are used because these all are part of application, these specify
 ## The other procedures used in project are as fallows.
 
 Troble shooting Pods if pod fails.
-these methods involves commands like       #kubectl logs <pod-name>
+these methods involves commands like       
+
+#kubectl logs <pod-name>
   
 kubetcl describe pod<pod name>
+  
+  ![Screenshot (41)](https://user-images.githubusercontent.com/114085306/226715309-ac68200d-d064-46da-966e-d19026922780.png)
+
+  Here we can see pods status from starting,like tis there are some methods through which we can troubleshoot pods.
+  
+ # some times we get some update issues and we want to trouble shoot the problem, at that like times we generally rollback to previous deployments.
+  
+Here we can see some commands related that issue in my project.  
+  
+1.  
+  
+  
   
 
 
