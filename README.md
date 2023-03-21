@@ -180,8 +180,23 @@ The results will be like fallows.
   
 2.kubectl rollout status deploymentnginx---.This is to see rollout deployment status.
   
+#ADDING VOLUMES TO THE CREATED SUBNETS.
+  
+1.We can add volumes to the specific servers in case if the application required more volume.
+  
+  ![Screenshot (51)](https://user-images.githubusercontent.com/114085306/226729092-51e7bc89-1cb9-4217-8330-7e7101eef2cd.png)
+like above we can select the node and add volume to it. 
+  
   
 
+![Screenshot (52)](https://user-images.githubusercontent.com/114085306/226729327-941d05d5-f19a-415d-bfc2-d2c539e7f348.png)
 
+by selecting the option we can configure required volume to a node. and also can add Snapshot life cycle to the volumes we created.This is for not loosing any data or memory, simply we can say for data backups.
+  
+  ![Screenshot (53)](https://user-images.githubusercontent.com/114085306/226729783-e67b3e21-5895-4c8b-9103-4576c49369d7.png)
+
+  So, this is my project regarding AWS EKS deployment.In this document i have mentioned all the process done in the project one after one. 
+  
+  
 
 
