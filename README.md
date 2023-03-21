@@ -2,7 +2,7 @@
 
                    
 
-1.This Project is about Deploying Kubernetes application using using AWs kubernetes service.
+1.This Project is about Deploying   nginx  web application application using using AWs kubernetes service.
 AWS EKS- Aws eks is a service which is provided by Amazon Web Services for Kubernetes .This service is fully managed by AWS itself. The main        purpose of this service is to provide support for Deploying applications on internet.
 
 In this service we can launch an a server and assaign Networks, Subnets , and create Pods, assign security groups ,can attach multiple              loadbalancers depending upon application requirements.
