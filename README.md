@@ -121,8 +121,20 @@ kubetcl describe pod<pod name>
   
 Here we can see some commands related that issue in my project.  
   
-1.  
+1.  ![Screenshot (45)](https://user-images.githubusercontent.com/114085306/226718848-7bf1a1bd-8ae0-4ee6-90a0-51141d99ecf8.png)
+
+like in above picture we can delete a service and deploy previous version.
   
+The results will be like fallows.
+  
+  ![Screenshot (46)](https://user-images.githubusercontent.com/114085306/226719207-6fc98a89-e1dd-4669-81e6-acc648983b76.png)
+  
+  
+ Some other methods by which we can undo deployment rollouts are by using some commands like fallows
+  
+1.Kubectl rollout undo deployment.---> This will directs to previous version of application.
+  
+2.kubectl rollout status deploymentnginx---.This is to see rollout deployment status.
   
   
 
