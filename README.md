@@ -80,6 +80,50 @@ In that we use YAML documents to write Kubernetes manifest files.They are like b
 This is a service pod in which is useful in exposing pods to internet, because by default pods are private to the network if we want to expose them to internet, we first create a service and configure name and TYPE=Loadbalancer.Then it should be given in Deployment-nginx also.If you dont put load balancer or different proxys we can deploy them.
 
 
+
+1.apiVersion: apps/v1: This specifies the API version used for the Deployment object. In this case, it's the "apps/v1" version of the Kubernetes API.
+
+2.kind: Deployment: This indicates that the kubernetes object being created is a deployment.
+
+3.metadata: It contains metadata regarding the deployment object, like its name.
+
+4.spec: It defines the desired type of the deployment object, including the no.of replicas, update strategy, and the neede pod templates.
+
+5.replicas: 5: This specifies the desired number of replicas for the deployment, in which here it is 5.
+
+6.strategy: This mentions the update strategy for the deployment.
+
+7.type: RollingUpdate: Here this indicates that the deployment should use a rolling update strategy type.
+
+8.rollingUpdate: This specifies the rolling update configuration, including the highest number of unavailable replicas and the maximum number of latest replicas that can be created during the update.
+
+9.maxSurge: 25%: It specifies that  25% of additional replicas can be created during an update.
+
+10.maxUnavailable: 25%: This specifies that up to 25% of existing replicas can be can't use during an update.
+
+11.selector: This tells the labels used to select the pods that the Deployment should manage.
+
+12.matchLabels: This tells the label selector is used to match the pods, which in here is the name: proxy label.
+
+13.template: This specifies the pod template that is used to create the pods managed by the deployment.
+
+14.metadata: This have metadata about the pod template, like its labels.
+
+15.spec: This describes the desired state of the pod template, including the containers running in the pod.
+
+16.Containers: This specifies the containers running in the pod, here it is a single container running the nginx image.
+
+17.name: nginx: This tells the name of the container.
+
+18.image: kammana/nodeapp:v3: This specifies the docker image used here in the container.
+
+19.resources: This specifies the  available resource requests and limits for the container, this also includes memory & CPU.
+
+20.Ports: Here it specifies the container port used to expose the application running in  container. Here, it  is port no 8080.
+
+ 
+By above we can understand that this manifest file is having 5 replicas of a nginx webapplication.with resources and some rolling updates and surges.
+
 ![Screenshot (39)](https://user-images.githubusercontent.com/114085306/226710645-88b336a3-e823-4de4-bc6c-e23d1e9655fc.png)
 
 
