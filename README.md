@@ -1,4 +1,4 @@
-                                  ## AWS & EKS PROJECT ##
+# AWS EKS PROJECT
 
                    
 
