@@ -7,7 +7,7 @@ AWS EKS- Aws eks is a service which is provided by Amazon Web Services for Kuber
 
 In this service we can launch an a server and assaign Networks, Subnets ,and create Pods, assign security groups ,can attach multiple              loadbalancers depending upon application requirements.
 
- In this service we use tools like AWS cloud watch,Loadbalancers and so on .
+ In this service we use tools like AWS cloud watch,Loadbalancers and so on.
 
 2.WHY AWS EKS CLUSTER?
      Because now a days all the projects using this service because it provides services in such a  way that we can deploy,scale,rollout,and            can monitor our project/application very easily. How  ever there are other compitetors are there in the market for EKS service, these              are  different from person/ person or ganizations.
